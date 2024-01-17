@@ -21,11 +21,15 @@ function ForecastComp({ forecast }) {
 
                     return (
                         <div key={index} className='singleDay'>
-                            <p className='fw-bold'>{formattedDate}</p>
-                            <p>{item.weather[0].main}</p>
-                            <img src={`http://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png`} alt="weather"></img>
-                            <p>Temp: {item.main.temp.toFixed(0)}°C</p>
-                            <p>Perc: {item.main.feels_like.toFixed(0)}°C</p>
+                            <div>
+                                <p className='fw-bold text-center'>{formattedDate}</p>
+                                <img src={`http://openweathermap.org/img/wn/${forecast[0].weather[0].icon}@2x.png`} alt="weather"></img>
+                            </div>
+                            <div>
+                                <p>{item.weather[0].main}</p>
+                                <p>Temp: {item.main.temp.toFixed(0)}°C</p>
+                                <p>Perc: {item.main.feels_like.toFixed(0)}°C</p>
+                            </div>
                         </div>
                     )
                 })}
