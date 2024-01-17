@@ -73,7 +73,7 @@
 
   h2 {
     margin-bottom: 3rem;
-    font-size: 5rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -138,14 +138,14 @@
 }
 
 button {
-  padding: 0.8rem 1.4rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 20px;
   border: 2px solid grey;
   background-color: rgba(206, 175, 175, 0.2);
   color: white;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 2;
 }
 
