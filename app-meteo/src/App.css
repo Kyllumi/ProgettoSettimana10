@@ -1,0 +1,134 @@
+.App {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    background: url('./assets/wallpaper.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .App .top {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .App .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(206, 175, 175, 0.2);
+  }
+  
+  .bold {
+    font-weight: 800;
+  }
+  
+  .italic {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  .App .search {
+    text-align: center;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .App .search input {
+    padding: 0.8rem 1.4rem;
+    border-radius: 3rem;
+    border: 2px solid grey;
+    background-color: rgba(206, 175, 175, 0.2);
+    color: white;
+    width: 50%;
+  
+    &:focus {
+      outline-color: rgba(234, 125, 31, 0.827);
+    }
+  
+    &::placeholder {
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .forecast {
+    width: 80%;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(206, 175, 175, 0.2);
+  }
+  
+  .container2>div {
+    flex: 1 0 20%;
+    margin: 1%;
+  }
+  
+  @media (max-width: 768px) {
+    .container2>div {
+      flex: 1 0 30%;
+    }
+  }
+  
+  .singleDay {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 0.1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: rgba(113, 106, 106, 0.532);
+    border: 1px solid grey;
+    flex: 1;
+  
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
