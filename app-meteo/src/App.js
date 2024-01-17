@@ -53,7 +53,7 @@ function App() {
 
       {!showSearch && weather.name !== undefined &&
         <>
-          <button onClick={resetSearch}>Back</button>
+          <button className='rounded-5 ' onClick={resetSearch}>Back</button>
           <WeatherComp weather={weather} />
           {forecast.length > 0 &&
             <ForecastComp forecast={forecast} />
