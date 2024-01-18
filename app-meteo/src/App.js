@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import ForecastComp from './components/ForecastComp';
-import WeatherComp from './components/WeatherComp';
 import SearchComp from './components/SearchComp';
 import './App.css';
+import DetailComp from './components/DetailComp';
 
 function App() {
   const [weather, setWeather] = useState({})
@@ -51,13 +50,10 @@ function App() {
         />
       }
 
-      {!showSearch && weather.name !== undefined &&
+      {!showSearch && weather.name !== undefined && forecast.length > 0 &&
         <>
           <button className='rounded-5 ' onClick={resetSearch}>Back</button>
-          <WeatherComp weather={weather} />
-          {forecast.length > 0 &&
-            <ForecastComp forecast={forecast} />
-          }
+          <DetailComp weather={weather} forecast={forecast} />
         </>
       }
     </div>
